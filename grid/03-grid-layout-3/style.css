@@ -89,3 +89,68 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/*Solution*/
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header{
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo{
+  justify-self: self-start;
+}
+
+.header div{
+  align-content: center;
+}
+
+.menu > ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav > ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.article div{
+  height: 200px;
+}
+
+.sidebar{
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+}
+
+.sidebar div{
+  display: grid;
+  align-content: center;
+}
+
+.footer{
+  grid-column: 1 / 3;
+}
+
+ul{
+  list-style: none;
+}
+
+.card p{
+  padding: 5px;
+}
